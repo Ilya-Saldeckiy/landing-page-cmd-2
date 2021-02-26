@@ -7,4 +7,8 @@ window.onscroll = function() {
     if(500 > scrolled){
         $(".header-section-fixed").removeClass("fixed-active")         
     }
+    if(scrolled > 7380){
+        $(".header-section-fixed").removeClass("fixed-active")         
+    }
+
 }
