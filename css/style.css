@@ -191,6 +191,14 @@ li{
     margin-right: 223px;
 } */
 
+.promo{
+    white-space: nowrap;
+}
+
+.researches-link:hover{
+    text-decoration: underline;
+}
+
 .header-phone-position{
     margin-left: auto;
     margin-right: 56px;
