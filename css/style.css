@@ -912,6 +912,10 @@ li{
     .cart-btn{
         top: 0;
     }
+
+    .cart-number{
+        top: -8px;
+    }
 }
 
 @media (max-width: 1023px){
