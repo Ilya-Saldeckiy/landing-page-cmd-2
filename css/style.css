@@ -79,6 +79,10 @@ li{
     cursor: pointer;
 }
 
+.vpc,.nowrap{
+    white-space: nowrap;
+}
+
 /* .btn:hover{
     background-color: #18bbf0;
     transition: background-color .3s ease-in-out;
@@ -107,9 +111,8 @@ li{
 .header-section{
     padding-top: 32px;
     background: url('../img/header_bg.jpg') 50% 100% no-repeat;
-    background-color: #9d96d5;
     background-size: cover;
-    padding-bottom: 98px;
+    padding-bottom: 94px;
 }
 
 .header-container{
@@ -118,7 +121,7 @@ li{
 
 .logo{
     margin-right: 141px;
-    margin-bottom: 119px;
+    margin-bottom: 112px;
 }
 
 .second-logo{
@@ -143,6 +146,10 @@ li{
 
 .fixed-active .logo{
     display: none;
+}
+
+.fixed-active .header-caption{
+    padding-top: 112px;
 }
 
 .fixed-active .second-logo{
@@ -212,7 +219,7 @@ li{
     font-weight: 700;
     color: #003594;
     margin-top: 0;
-    margin-bottom: 47px;
+    margin-bottom: 54px;
     width: 202px;
 }
 
@@ -223,7 +230,7 @@ li{
     font-weight: 400;
     color: #ffffff;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 38px;
 }
 
 .cart-btn{
@@ -232,7 +239,8 @@ li{
     display: inline-block;
     background: url('../img/ico_cart_white.svg') 50% no-repeat;
     position: relative;
-    top: 6px;
+    top: 9px;
+    left: -7px;
 }
 
 .btn-position-header{
@@ -252,7 +260,13 @@ li{
     color: #ffffff;
     text-align: center;
     z-index: 6;
-    right: -10px;
+    right: -1px;
+    top: 1px;
+    display: none;
+}
+
+.open-cart{
+    display: block;
 }
 
 .header-caption_decoration{
@@ -387,8 +401,8 @@ li{
 
 .important-position{
     border: 1px solid #f8485e;
-    padding-top: 46px;
-    padding-left: 48px;
+    padding-top: 45px;
+    padding-left: 47px;
     padding-bottom: 47px;
     padding-right: 111px;
     margin-bottom: 96px;
@@ -440,7 +454,7 @@ li{
 }
 
 .researches-sale-persent{
-    margin-right: auto;
+    margin-right: 48px;
 }
 
 .researches-sale-persent-text{
@@ -462,7 +476,7 @@ li{
 .researches-block{
     width: 920px;
     display: flex;
-    border: 1px solid #8986ca;
+    border: 1px solid #c4c2e4;
     padding-top: 38px;
     padding-bottom: 35px;
     padding-left: 32px;
@@ -488,7 +502,7 @@ li{
     line-height: 24px;
     font-weight: 400;
     color: #000000;
-    margin-top: 25px;
+    margin-top: 21px;
 }
 
 .researches-position-link{
@@ -535,7 +549,7 @@ li{
 .section-violations{
     padding-top: 100px;
     padding-bottom: 96px;
-    border: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 .violations-position{
@@ -581,7 +595,6 @@ li{
 .section-receive{
     padding-top: 100px;
     padding-bottom: 90px;
-    border: 1px solid #dddddd;
 }
 
 .receive-card-position{
@@ -593,7 +606,7 @@ li{
 }
 
 .receive-card:not(:last-child){
-    margin-right: 121px;
+    margin-right: 113px;
 }
 
 .receive-card-text{
@@ -624,6 +637,7 @@ li{
 .section-conditions{
     padding-top: 107px;
     padding-bottom: 91px;
+    border-top: 1px solid #eeeeee;
 }
 
 .conditions-text{
@@ -637,9 +651,18 @@ li{
     margin-bottom: 20px;
 }
 
+.section-adress{
+    padding-top: 99px;
+    border-top: 1px solid #dddddd;
+}
+
 .adress-btn-position{
     width: 400px;
     margin: 0 auto;
+}
+
+.adress-caption{
+    margin-bottom: 39px;
 }
 
 .adress-btn{
@@ -660,12 +683,12 @@ li{
 
 .adress-btn-border{
     border-bottom: 1px solid #dddddd;
-    margin-bottom: 50px;
+    margin-bottom: 62px;
 }
 
 .map-position{
-    position: relative;
-    top: -48px;
+    /* position: relative;
+    top: -48px; */
     display: none;
 }
 
@@ -675,7 +698,9 @@ li{
 
 .map{
     width: 100%;
-    height: 752px;
+    height: 502px;
+    margin-bottom: 136px;
+    margin-top: -48px;
 }
 
 
@@ -684,8 +709,8 @@ li{
 
 .footer{
     margin-top: -48px;
-    padding-top: 26px;
-    padding-bottom: 45px;
+    padding-top: 32px;
+    padding-bottom: 68px;
     background-color: #f2f6ff;
 }
 
@@ -897,6 +922,7 @@ li{
     .header-section{
         padding-bottom: 90px;
         background-size: auto;
+        background-color: #9d96d5;
     }
 
     .logo{
@@ -1027,6 +1053,14 @@ li{
         width: 100%;
     }
 
+    .section-adress{
+        padding-top: 54px;
+    }
+
+    .map{
+        margin-bottom: 98px;
+    }
+
     img{
         max-width: 144px;
     }
@@ -1036,11 +1070,15 @@ li{
     }
 
     .header-caption{
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 32px;
+        line-height: 36px;
         margin: 0 auto;
-        margin-bottom: 37px;
-        width: 70%;
+        margin-bottom: 32px;
+        width: 190px;
+    }
+
+    .header-promocode {
+        font-size: 16px;
     }
 
     .header-subtitle_decoration{
@@ -1052,7 +1090,7 @@ li{
     .header-subtitle{
         font-size: 16px;
         line-height: 24px;
-        margin-bottom: 33px;
+        margin-bottom: 20px;
     }
 
     .header-phone-position{
@@ -1068,7 +1106,7 @@ li{
     .logo{
         width: 145px;
         margin-right: auto;
-        margin-bottom: 46px;
+        margin-bottom: 31px;
     }
     
     .menu-list-item{
@@ -1089,12 +1127,12 @@ li{
     }
 
     .header-subtitle{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px;
-        /* margin-left: 214px; */
+        margin-left: 214px;
         margin: 0 auto;
         width: 100%;
-        margin-bottom: 33px;
+        margin-bottom: 20px;
 
     }
 
@@ -1110,7 +1148,7 @@ li{
     .header-section{
         background: url('../img/header_bg_mob.jpg') 50% 100% no-repeat;
         background-color: #9d96d5;
-        padding-bottom: 98%;
+        padding-bottom: 91%;
         background-size: 100% auto;
         padding-top: 16px;
     }
@@ -1183,8 +1221,8 @@ li{
     }
 
     .important-position{
-        padding-top: 33px;
-        padding-left: 32px;
+        padding-top: 32px;
+        padding-left: 31px;
         margin-bottom: 59px;
     }
 
@@ -1207,6 +1245,7 @@ li{
     .sale-text{
         font-size: 16px;
         line-height: 24px;
+        text-align: left;
     }
 
     .sale-decoration{
@@ -1272,7 +1311,7 @@ li{
     .researches-link-text{
         font-size: 16px;
         line-height: 24px;
-        margin-top: 14px;
+        margin-top: 20px;
     }
 
     .researches-position-1{
@@ -1315,6 +1354,7 @@ li{
 
     .violations-list-position {
         margin-bottom: 58px;
+        margin-left: -8px;
     }
 
     .section-receive {
@@ -1413,6 +1453,8 @@ li{
 
     .what-know-img {
         border-radius: 0px 0px 0px 32px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .fixed-active .header-phone-position{
@@ -1426,6 +1468,6 @@ li{
 
 @media (max-width: 350px){
     .header-caption{
-        width: 100%;
+        width: 90%;
     }
 }
