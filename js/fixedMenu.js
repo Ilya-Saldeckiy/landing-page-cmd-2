@@ -20,7 +20,7 @@ if(document.documentElement.clientWidth > 1600){
             $(".header-section-fixed").addClass("fixed-active")
         }
         if(500 > scrolled){
-            $(".header-section-fixed").removeClass("fixed-active")         
+            $(".header-section-fixed").removeClass("fixed-active")        
         }
         if(scrolled > 7400){
             $(".header-section-fixed").removeClass("fixed-active")         

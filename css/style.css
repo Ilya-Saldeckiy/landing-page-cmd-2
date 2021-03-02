@@ -121,7 +121,7 @@ li{
 
 .logo{
     margin-right: 141px;
-    margin-bottom: 112px;
+    /* margin-bottom: 112px; */
 }
 
 .second-logo{
@@ -129,7 +129,11 @@ li{
 }
 
 .header-section-fixed{
-    position: relative;
+    /* position: relative; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 6;
 }
 
 .fixed-active{
@@ -146,10 +150,6 @@ li{
 
 .fixed-active .logo{
     display: none;
-}
-
-.fixed-active .header-caption{
-    padding-top: 112px;
 }
 
 .fixed-active .second-logo{
@@ -221,6 +221,7 @@ li{
     margin-top: 0;
     margin-bottom: 54px;
     width: 202px;
+    padding-top: 112px;
 }
 
 .header-subtitle{
@@ -814,6 +815,10 @@ li{
         padding-top: 32px;
     }
 
+    .header-caption{
+        padding-top: 171px;
+    }
+
     .logo{
         margin-right: 65px;
         margin-bottom: 128px;
@@ -931,7 +936,11 @@ li{
 
     .logo{
         margin-right: auto;
-        margin-bottom: 122px;
+        /* margin-bottom: 122px; */
+    }
+
+    .header-caption{
+        padding-top: 165px;
     }
     
     .menu-list-item{
@@ -1110,7 +1119,7 @@ li{
     .logo{
         width: 145px;
         margin-right: auto;
-        margin-bottom: 31px;
+        /* margin-bottom: 31px; */
     }
     
     .menu-list-item{
@@ -1467,6 +1476,10 @@ li{
 
     .header-phone-position{
         top: 6px;
+    }
+
+    .header-caption{
+        padding-top: 60px;
     }
 }
 
