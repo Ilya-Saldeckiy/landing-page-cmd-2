@@ -23,7 +23,10 @@ if(document.documentElement.clientWidth > 1600){
             $(".header-section-fixed").removeClass("fixed-active")        
         }
         if(scrolled > 7400){
-            $(".header-section-fixed").removeClass("fixed-active")         
+            $(".header-section-fixed").addClass("fixed-close")         
+        }
+        if(scrolled < 7400){
+            $(".header-section-fixed").removeClass("fixed-close")         
         }
     }
 }
@@ -39,7 +42,10 @@ if(document.documentElement.clientWidth > 1400){
             $(".header-section-fixed").removeClass("fixed-active")         
         }
         if(scrolled > 7500){
-            $(".header-section-fixed").removeClass("fixed-active")         
+            $(".header-section-fixed").addClass("fixed-close")         
+        }
+        if(scrolled < 7050){
+            $(".header-section-fixed").removeClass("fixed-close")         
         }
     }
 }
@@ -55,7 +61,10 @@ if(document.documentElement.clientWidth > 1000){
             $(".header-section-fixed").removeClass("fixed-active")         
         }
         if(scrolled > 8050){
-            $(".header-section-fixed").removeClass("fixed-active")         
+            $(".header-section-fixed").addClass("fixed-close")         
+        }
+        if(scrolled < 8050){
+            $(".header-section-fixed").removeClass("fixed-close")         
         }
     }
 }
@@ -71,7 +80,10 @@ if(document.documentElement.clientWidth > 320){
             $(".header-section-fixed").removeClass("fixed-active")         
         }
         if(scrolled > 10000){
-            $(".header-section-fixed").removeClass("fixed-active")         
+            $(".header-section-fixed").addClass("fixed-close")         
+        }
+        if(scrolled < 10000){
+            $(".header-section-fixed").removeClass("fixed-close")         
         }
     }
 }
