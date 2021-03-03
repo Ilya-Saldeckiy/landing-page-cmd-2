@@ -111,8 +111,15 @@ li{
 .header-section{
     padding-top: 32px;
     background: url('../img/header_bg.jpg') 50% 100% no-repeat;
-    background-size: cover;
+    background-position: top;
+    /* background-size: cover; */
     padding-bottom: 96px;
+}
+
+.header-phone-position{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .header-container{
@@ -129,8 +136,8 @@ li{
 }
 
 .header-section-fixed{
-    /* position: relative; */
-    position: fixed;
+    position: relative;
+    /* position: fixed; */
     left: 0;
     right: 0;
     z-index: 6;
@@ -145,7 +152,8 @@ li{
     padding-bottom: 10px;
     z-index: 5;
     background-color: #ffffff;
-    border-bottom: 1px solid #dddddd;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25)
+    /* border-bottom: 1px solid #dddddd; */
 }
 
 .fixed-active .logo{
@@ -225,7 +233,7 @@ li{
     margin-top: 0;
     margin-bottom: 54px;
     width: 202px;
-    padding-top: 161px;
+    padding-top: 111px;
 }
 
 .header-subtitle{
@@ -399,6 +407,12 @@ li{
 
 .factor-card-3{
     background: url('../img/ico_03.svg') 50% 0% no-repeat;
+}
+
+.factor-caption {
+    width: 835px;
+    margin: 0 auto;
+    margin-bottom: 47px;
 }
 
 
@@ -708,6 +722,10 @@ li{
     margin-top: -48px;
 }
 
+.horizontal-scroll-wrapper{
+    display: flex;
+}
+
 
 
 
@@ -863,7 +881,7 @@ li{
 
     .header-section{
         padding-bottom: 98px;
-        background-size: cover;
+        /* background-size: cover; */
     }
 
     .section-info-text {
@@ -883,6 +901,7 @@ li{
     .what-know-img {
         max-width: 440px;
         height: 320px;
+        border-radius: 0px 0px 0px 48px;
     }
 
     .what-know-text-position {
@@ -1014,6 +1033,12 @@ li{
     .factor-card:not(:last-child) {
         margin-right: 0px;
         margin-bottom: 59px;
+    }
+
+    .factor-caption {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 47px;
     }
 
     .researches-block {
@@ -1189,6 +1214,12 @@ li{
         font-weight: 700;
         text-align: center;
         margin-top: 0;
+        margin-bottom: 39px;
+    }
+
+    .factor-caption {
+        width: 100%;
+        margin: 0 auto;
         margin-bottom: 39px;
     }
 
@@ -1455,7 +1486,7 @@ li{
     }
 
     .adress-btn{
-        width: 49%;
+        width: 195px;
     }
 
     .adress-btn-position{
@@ -1500,8 +1531,8 @@ li{
 
     .what-know-img {
         border-radius: 0px 0px 0px 32px;
-        padding-left: 16px;
-        padding-right: 16px;
+        /* padding-left: 16px;
+        padding-right: 16px; */
     }
 
     .fixed-active .header-phone-position{
@@ -1527,6 +1558,36 @@ li{
     .researches-position{
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    .researches-sale-persent-text{
+        width: 180px;
+    }
+
+    .img-pos{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .horizontal-scroll-wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+    }
+
+    .horizontal-scroll-wrapper > div {
+        flex: 0 0 auto
+    }
+
+    .section-conditions{
+        padding-top: 0px;
+        border: none;
+    }
+
+    .conditions-caption{
+        border-top: 1px solid #eeeeee;
+        padding-top: 54px;
     }
 }
 
