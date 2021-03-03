@@ -149,20 +149,44 @@ li{
     right: 0;
     top: 0;
     padding-top: 24px;
-    padding-bottom: 10px;
+    padding-bottom: 13px;
     z-index: 5;
     background-color: #ffffff;
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25)
     /* border-bottom: 1px solid #dddddd; */
 }
 
+
 .fixed-active .logo{
     display: none;
 }
 
 .fixed-active .second-logo{
+    max-width: 144px;
+    margin-right: 191px;
+}
+
+.fixed-active .cart-number{
+    right: 1px;
+    top: -9px;
+}
+
+.fixed-active .second-logo{
     display: block;
     margin-bottom: 0;
+}
+
+.fixed-active .header-phone-position{
+    top: -4px;
+    margin-right: 62px;
+}
+
+.fixed-active .cart-btn{
+    top: 0;
+}
+
+.fixed-active .nav{
+    margin-top: -10px;
 }
 
 .fixed-active a{
@@ -731,6 +755,10 @@ li{
 
 /* Стили footer */
 
+.footer-position{
+    align-items: center;
+}
+
 .footer{
     margin-top: -55px;
     padding-top: 32px;
@@ -843,12 +871,24 @@ li{
     }
 
     .header-caption{
-        padding-top: 171px;
+        padding-top: 111px;
     }
 
     .logo{
         margin-right: 65px;
-        margin-bottom: 128px;
+        /* margin-bottom: 128px; */
+    }
+
+    .fixed-active .second-logo img{
+        max-width: 144px;
+    }
+
+    .fixed-active .second-logo{
+        margin-right: 88px;
+    }
+
+    .fixed-active .nav{
+        margin-top: 0;
     }
     
     .menu-list-item:not(:last-child){
@@ -969,6 +1009,10 @@ li{
     .logo{
         margin-right: auto;
         /* margin-bottom: 122px; */
+    }
+
+    .fixed-active .second-logo{
+        margin-right: auto;
     }
 
     .header-caption{
@@ -1113,7 +1157,7 @@ li{
     }
 
     .header-caption{
-        padding-top:153px;
+        padding-top:100px;
     }
 
 }
@@ -1135,6 +1179,10 @@ li{
 
     img{
         max-width: 144px;
+    }
+
+    .fixed-active .header-phone-position {
+        margin-right: 20px;
     }
 
     .header-section{
@@ -1544,7 +1592,7 @@ li{
     }
 
     .header-caption{
-        padding-top: 66px;
+        padding-top: 32px;
     }
 
     .map{

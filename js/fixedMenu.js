@@ -93,7 +93,7 @@ if(document.documentElement.clientWidth > 319){
    
     var anchorScrolls = {
       ANCHOR_REGEX: /^#[^ ]+$/,
-      OFFSET_HEIGHT_PX: 50,
+      OFFSET_HEIGHT_PX: 40,
    
       /**
        * Establish events, and fix initial scroll position if a hash is provided.
